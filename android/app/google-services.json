@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "859918374588",
+    "project_id": "tafsir-34a99",
+    "storage_bucket": "tafsir-34a99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859918374588:android:d81dd95f73a371588562b9",
+        "android_client_info": {
+          "package_name": "com.example.tafsir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859918374588-6fheqaiklj39bq2v52p9adnduv1cnkph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyGynMKeWNv2cp3IWZFhO6M1ba_cvu-ZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "859918374588-6fheqaiklj39bq2v52p9adnduv1cnkph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

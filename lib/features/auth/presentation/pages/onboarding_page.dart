@@ -12,13 +12,6 @@ class OnboardingPage extends StatelessWidget {
             "\"Поистине, Мы ниспослали Наставление (Коран). Мы, без сомнения, сохраним его (от искажений и изменений).\"\n Сура Аль-Хиджр, 9",
         doAnimateImage: true),
     PageModel(
-        color: const Color(0xff106791),
-        imageAssetPath: 'assets/images/page.png',
-        title: "Необычный и красивый дизайн",
-        body:
-            "Мы упорно трудились, чтобы выбрать красивые цвета, анимацию и в целом привлекательный дизайн для этой прекрасной книги" ,
-        doAnimateImage: true),
-    PageModel(
         color: const Color(0xff664d7b),
         imageAssetPath: 'assets/images/page.png',
         title: "Eжедневные зикры",
@@ -31,6 +24,13 @@ class OnboardingPage extends StatelessWidget {
         title: "Время молитвы",
         body:
             "\"Поистине, молитва предписана для верующих в определенное время\"\n Сура ан-Ниса 4: 103",
+        doAnimateImage: true),
+    PageModel(
+        color: const Color(0xff106791),
+        imageAssetPath: 'assets/images/page.png',
+        title: "Необычный и красивый дизайн",
+        body:
+            "Мы упорно трудились, чтобы выбрать красивые цвета, анимацию и в целом привлекательный дизайн для этой прекрасной книги",
         doAnimateImage: true),
   ];
   @override

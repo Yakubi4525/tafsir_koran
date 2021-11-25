@@ -136,7 +136,7 @@ class LoginPage extends StatelessWidget {
                 ),
                 hSizedBox2,
                 InkWell(
-                  onTap: () => Get.toNamed('/tafsir'),
+                  onTap: () => Get.toNamed('/main'),
                   child: CustomText(
                     text: 'Пропустить этот шаг',
                     fontSize: 16.0,

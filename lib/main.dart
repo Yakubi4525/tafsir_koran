@@ -4,7 +4,9 @@ import 'package:tafsir/core/routes/page_routes.dart';
 import 'package:tafsir/core/theme/app_theme.dart';
 import 'package:tafsir/features/auth/presentation/pages/onboarding_page.dart';
 
-void main() {
+void main() async{
+  // WidgetsFlutterBinding.ensureInitialized(); 
+  // await Firebase.initializeApp();
   runApp(MyApp());
 }
 
