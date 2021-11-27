@@ -8,7 +8,6 @@ class SpecificSurahServices {
   static var client = http.Client();
 
   static Future<SpecificSurah> fetchSurah(String page) async {
-    print('pageeeeeeee $page');
     var response =
         await client.get("https://api.quran.sutanlab.id/surah/" + page);
     var specificSurah;

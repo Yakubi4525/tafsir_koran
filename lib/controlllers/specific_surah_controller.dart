@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:tafsir/features/tafsir/data/datasources/services/specific_surah_services.dart';
+import 'package:tafsir/features/tafsir/data/datasources/specific_surah_services.dart';
 import 'package:tafsir/features/tafsir/domain/entities/specific_surah.dart';
 
 // import 'package:simple_quran_apps/views/detail_surah/detail_surah.dart';

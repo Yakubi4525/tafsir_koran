@@ -122,12 +122,12 @@ class Translation {
 
   factory Translation.fromJson(Map<String, dynamic> json) => Translation(
         en: json["en"],
-        id: json["id"],
+        id: json["en"],
       );
 
   Map<String, dynamic> toJson() => {
         "en": en,
-        "id": id,
+        "ru": en,
       };
 }
 
