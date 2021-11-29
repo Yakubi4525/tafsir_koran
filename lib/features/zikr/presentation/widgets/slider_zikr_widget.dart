@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:tafsir/features/zikr/domain/entities/zikr.dart';
 import 'package:tafsir/core/configurator/colors.dart';
 import 'package:tafsir/features/zikr/presentation/widgets/slide_page_view_item.dart';
-import 'package:tafsir/features/zikr/presentation/widgets/tasbih_widget.dart';
-
-// import 'bloc.dart';
 
 class SliderZikr extends StatefulWidget {
   final List<Zikr> zikr;
@@ -17,7 +14,6 @@ class SliderZikr extends StatefulWidget {
 
 class _SliderZikrState extends State<SliderZikr> {
   double currentPage = 0;
-  // final bloc = Bloc();
 
   PageController _pageController = PageController();
   @override
@@ -34,10 +30,6 @@ class _SliderZikrState extends State<SliderZikr> {
   void dispose() {
     _pageController.dispose();
     super.dispose();
-  }
-
-  void setWelcome() {
-    // bloc.setWelcome();
   }
 
   @override
@@ -57,7 +49,8 @@ class _SliderZikrState extends State<SliderZikr> {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.only(top: 20, bottom: 30, left: 16, right: 16),
+        padding:
+            const EdgeInsets.only(top: 20, bottom: 30, left: 16, right: 16),
         child: Column(
           children: [
             Expanded(
@@ -66,7 +59,14 @@ class _SliderZikrState extends State<SliderZikr> {
                 physics: BouncingScrollPhysics(),
                 itemCount: widget.zikr.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return SlidePageViewItem(zikr: widget.zikr[index]);
+                  return SlidePageViewItem(
+                    zikr: widget.zikr[index],
+                    tasbihFunction: () {
+                      _pageController.nextPage(
+                          duration: Duration(milliseconds: 100),
+                          curve: Curves.ease);
+                    },
+                  );
                 },
                 onPageChanged: (value) {
                   setState(
@@ -99,13 +99,11 @@ class _SliderZikrState extends State<SliderZikr> {
       height: 8,
       width: 8,
       decoration: BoxDecoration(
-        color: currentPage == index ? primaryColor:secondaryColor,
+        color: currentPage == index ? primaryColor : secondaryColor,
         borderRadius: BorderRadius.circular(5),
       ),
     );
   }
-
-
 
   Widget buildInk({String title, Function onTap}) {
     return InkWell(

@@ -11,8 +11,8 @@ import 'package:tafsir/features/zikr/domain/entities/zikr.dart';
 
 const pray_path = 'lib/core/zikr_json/pray_zikr.json';
 const morning_path = 'lib/core/zikr_json/morning_zikr.json';
-const night_path = 'package:tafsir/core/zikr_json/night_zikr.json';
-const important_path = 'package:tafsir/core/zikr_json/important_zikr.json';
+const night_path = 'lib/core/zikr_json/night_zikr.json';
+const important_path = 'lib/core/zikr_json/important_zikr.json';
 
 class ZikrService {
   Future<String> getJson({@required String path}) {

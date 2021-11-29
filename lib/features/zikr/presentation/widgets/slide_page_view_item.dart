@@ -8,8 +8,10 @@ import 'package:tafsir/features/zikr/presentation/widgets/tasbih_widget.dart';
 
 class SlidePageViewItem extends StatefulWidget {
   final Zikr zikr;
+  final Function tasbihFunction;
 
-  const SlidePageViewItem({Key key, this.zikr}) : super(key: key);
+  const SlidePageViewItem({Key key, this.zikr, this.tasbihFunction})
+      : super(key: key);
 
   @override
   _SlidePageViewItemState createState() => _SlidePageViewItemState();
@@ -125,10 +127,14 @@ class _SlidePageViewItemState extends State<SlidePageViewItem> {
               children: [
                 ProgressWidget(value: count, parts: widget.zikr.count),
                 BouncingButton(
-                  onPressed: () {
+                  onPressed: () async {
                     setState(() {
                       count++;
                     });
+                    if (count == widget.zikr.count) {
+                      await Future.delayed(Duration(milliseconds: 1500));
+                      widget.tasbihFunction();
+                    }
                   },
                 ),
               ],

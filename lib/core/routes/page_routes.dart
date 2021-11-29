@@ -6,6 +6,7 @@ import 'package:tafsir/features/pray_time/presentation/pages/pray_time_page.dart
 import 'package:tafsir/features/tafsir/presentation/pages/detail_surah.dart';
 import 'package:tafsir/features/tafsir/presentation/pages/tafsir_page.dart';
 import 'package:tafsir/features/zikr/presentation/pages/after_pray_zikr_page.dart';
+import 'package:tafsir/features/zikr/presentation/pages/detail_zikr.dart';
 import 'package:tafsir/features/zikr/presentation/pages/important_zikr_page.dart';
 import 'package:tafsir/features/zikr/presentation/pages/morning_zikr_page.dart';
 import 'package:tafsir/features/zikr/presentation/pages/night_zikr_page.dart';
@@ -53,27 +54,32 @@ class AppRoutesGet {
         GetPage(
           name: '/detail-surah',
           page: () => DetailSurah(),
-          transition: Transition.cupertino,
+          transition: Transition.rightToLeft,
         ),
         GetPage(
           name: '/night-zikr',
           page: () => NightZikrPage(),
-          transition: Transition.cupertino,
+          transition: Transition.rightToLeft,
         ),
         GetPage(
           name: '/morning-zikr',
           page: () => MorningZikrPage(),
-          transition: Transition.cupertino,
+          transition: Transition.rightToLeft,
         ),
         GetPage(
           name: '/important-zikr',
           page: () => ImportanatZikrPage(),
-          transition: Transition.cupertino,
+          transition: Transition.rightToLeft,
         ),
         GetPage(
           name: '/pray-zikr',
           page: () => AfterPrayZikrPage(),
-          transition: Transition.cupertino,
+          transition: Transition.rightToLeft,
+        ),
+        GetPage(
+          name: '/detail-zikr',
+          page: () => ZikrDetail(),
+          transition: Transition.rightToLeft,
         ),
       ];
   }

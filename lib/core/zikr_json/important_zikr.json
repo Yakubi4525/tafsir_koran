@@ -48,18 +48,6 @@
         "scientist": "Гъуфранака"
     },
     {
-        "id": "41",
-        "category": "important_zikr",
-        "name": "",
-        "arabic_text": "",
-        "translation_ru": "",
-        "translation_tj": "",
-        "translation_eng": "",
-        "transcription": "",
-        "count": 1,
-        "scientist": ""
-    },
-    {
         "id": "42",
         "category": "important_zikr",
         "name": "Зикр, произносимый после омовения",
@@ -70,18 +58,6 @@
         "transcription": "Ашхаду алля иляха илля Лляху вахда-ху ля шарикя ля-ху ва ашхаду анна Мухаммадан 'абду-ху ва расулю-ху",
         "count": 1,
         "scientist": "ан Насаи, ат Тирмизи)"
-    },
-    {
-        "id": "43",
-        "category": "important_zikr",
-        "name": "",
-        "arabic_text": "",
-        "translation_ru": "",
-        "translation_tj": "",
-        "translation_eng": "",
-        "transcription": "",
-        "count": 1,
-        "scientist": ""
     },
     {
         "id": "44",
@@ -118,18 +94,6 @@
         "transcription": "Аллахумма ифтах ли абваба рахматика",
         "count": 1,
         "scientist": "Муслим"
-    },
-    {
-        "id": "47",
-        "category": "important_zikr",
-        "name": "",
-        "arabic_text": "",
-        "translation_ru": "",
-        "translation_tj": "",
-        "translation_eng": "",
-        "transcription": "",
-        "count": 1,
-        "scientist": ""
     },
     {
         "id": "48",

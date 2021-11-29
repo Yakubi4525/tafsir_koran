@@ -57,7 +57,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
             Text(
               '${widget.value}',
               style:  TextStyle(
-                color: widget.value == widget.parts ? primaryColor : blackColor,
+                color: widget.value >= widget.parts ? blackColor : Colors.grey,
                 fontSize: 20,
                 fontWeight: FontWeight.w700,
               ),
