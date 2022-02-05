@@ -7,8 +7,8 @@ class CustomText extends StatelessWidget {
   Color color = Colors.black;
   Alignment alignment = Alignment.topLeft;
   String fontFamily;
-
-  CustomText({Key key,  @required this.text, @required this.fontSize, this.alignment, this.color, this.fontFamily}) : super(key: key);
+  FontWeight fontWeight;
+  CustomText({Key key,  @required this.text, @required this.fontSize, this.alignment, this.color, this.fontFamily, this.fontWeight}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +20,7 @@ class CustomText extends StatelessWidget {
           fontSize: fontSize,
           color: color,
           fontFamily: fontFamily,
+          fontWeight: fontWeight,
         ),
       ),
     );

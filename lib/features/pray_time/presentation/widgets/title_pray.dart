@@ -1,29 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tafsir/core/components/custom_text.dart';
 import 'package:tafsir/core/constants/constants.dart';
 
-class TitlePrayen extends StatelessWidget {
-  const Title({Key key}) : super(key: key);
-
+class TitlePray extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         CustomText(
-          text: 'Parer',
+          text: 'Намаз',
           fontSize: 20,
           color: Colors.grey,
         ),
         Spacer(),
         CustomText(
-          text: 'Adhan',
+          text: 'Время',
           fontSize: 20,
           color: Colors.grey,
         ),
         Spacer(),
         Padding(
           padding: const EdgeInsets.only(right: 20),
-          child: Image.asset('$urlImage/squares.png',),
+          child: IconButton(
+            onPressed: (){
+              Get.toNamed('/time_list');
+            },
+            icon: Image.asset(
+              '$urlImage/squares.png',
+            ),
+          )
         ),
       ],
     );
