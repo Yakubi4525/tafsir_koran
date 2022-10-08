@@ -7,7 +7,7 @@ import 'package:tafsir/core/theme/app_theme.dart';
 import 'package:tafsir/features/auth/presentation/pages/onboarding_page.dart';
 
 import 'core/datasources/cache_helper.dart';
-import 'core/routes/binding.dart';
+// import 'core/routes/binding.dart';
 
 
 void main() async{
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      initialBinding: Binding(),
+      // initialBinding: Binding(),
       title: 'Simple Quran Apps',
       debugShowCheckedModeBanner: false,
       getPages: AppRoutesGet.getListPages(),
